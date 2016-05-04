@@ -7,7 +7,7 @@ function executeThisCodeIfFileFails () {
 }
 
 function executeThisCodeAfterFileIsLoaded () {
-  // console.log(this.responseText);
+  console.log(this.responseText);
 
   var dataArray = JSON.parse(this.responseText).messages;
     console.log("data", dataArray);
