@@ -13,6 +13,7 @@ var chatty = (function(newchatty) {
 
 	  var messageList = document.getElementById("messageCon");
 
+
 	  for(index in dataArray) {
 	    var messageData = "";
 	    var messageObject = dataArray[index];
