@@ -1,4 +1,4 @@
-//just saw this file. Not sure we need main.js and this. 
-var chatty = (function () {
-
- }());
+var dark = document.getElementByID('darkTheme');
+if (dark === checked) {
+  document.querySelector("body").ClassList.add("darkTheme");
+}
