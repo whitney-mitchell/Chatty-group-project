@@ -1,5 +1,5 @@
 
-//load JSON file and return the array of objects. . AHA! IT IS ONJECTS!
+//load JSON file and return the array of objects. . AHA! IT IS OBJECTS!
 var chatty = (function(newchatty) {
 
 function executeThisCodeIfFileFails () {
