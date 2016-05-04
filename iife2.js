@@ -22,6 +22,6 @@ document.querySelector("body").addEventListener("click", function(event) {
   }
 });
 //example to disable elements in DOM
-<button class="clear-messages">Clear messages</button>
+//<button class="clear-messages">Clear messages</button>
 // This will disable the first button with a class of "button-message"
 document.getElementsByClassName("clear-messages")[0].setAttribute("disabled", true);
