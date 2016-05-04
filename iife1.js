@@ -9,17 +9,22 @@ function executeThisCodeIfFileFails () {
 function executeThisCodeAfterFileIsLoaded () {
   // console.log(this.responseText);
 
-var data = JSON.parse(this.responseText);
-  // console.log("data", data);
+  var dataArray = JSON.parse(this.responseText).messages;
+    console.log("data", dataArray);
 
-var messageList = document.getElementsByClassName("messageContainer");
+  var messageList = document.getElementById("messageCon");
 
-for(currentMessages in data.messages) {
-  var messageData = "";
-  var jsonMessages = data.messages[currentMessages];
-  messageData +=jsonMessages.messages;
+  for(index in dataArray) {
+    var messageData = "";
+    var messageObject = dataArray[index];
+    for (key in messageObject) {
+      var output = messageObject[key];
+      messageData += "<div>";
+      messageData += output;
+      messageData += "</div>";
 
-  messageList.innerHTML += messageData;
+      messageList.innerHTML += messageData;
+    }
   }
 }
 
