@@ -1,4 +1,6 @@
-var chatty = (function(chatty1) {
+
+//load JSON file and return the array of objects. . AHA! IT IS ONJECTS!
+var chatty = (function(newchatty) {
 
 }(chatty));
 
