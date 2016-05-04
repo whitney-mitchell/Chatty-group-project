@@ -3,7 +3,7 @@
 //expose a function to read ALL messages and delete THE SELECTED message.
 //below is example of setting query to body for adding elements.
 //
-var chatty = (function () {
+var chatty = (function() {
   var messages = [];
 
   return {
@@ -11,14 +11,15 @@ var chatty = (function () {
       return messages;
     }
     addMsg: function(userText) {
-      // messages.push(userText);
-      // return messages;
+      messages.push(userText);
+      return messages;
       var toDom = document.getElementById("messageCon");
-      var toMessage = "";
-      for (var i = 0; i < userText.length; i++) {
-        toMessage += `<div class="singleMessage">${userText[i]}`
-      }
+      // var toMessage = "";
+      // for (var i = 0; i < userText.length; i++) {
+      //   toMessage += `<div class="singleMessage">${userText[i]}</div>`;
+
       toDom.innerHTML = messages;
+      }
       return toDom;
     }
   };
