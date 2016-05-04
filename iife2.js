@@ -24,6 +24,7 @@ var chatty = (function(string) {
 
 
 
+
 // document.querySelector("body").addEventListener("click", function(event) {
 //   console.log(event);
 
@@ -46,3 +47,4 @@ var chatty = (function(string) {
 // <button class="clear-messages">Clear messages</button>
 // // This will disable the first button with a class of "button-message"
 // document.getElementsByClassName("clear-messages")[0].setAttribute("disabled", true);
+
