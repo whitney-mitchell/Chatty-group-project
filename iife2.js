@@ -12,7 +12,9 @@ var chatty = (function(string) {
     var toDom = document.getElementById("messageCon");
 
 
-    toDom.innerHTML = messages;
+    toDom.innerHTML += '<p>' + userText + '<button class="deleteButton">Delete</button>' + '</p>';
+    console.log(messages);
+
   }
   string.getMessagesArray = function() {
     return messages;
