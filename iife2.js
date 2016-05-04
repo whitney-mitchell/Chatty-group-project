@@ -3,27 +3,22 @@
 //expose a function to read ALL messages and delete THE SELECTED message.
 //below is example of setting query to body for adding elements.
 //
-var chatty = (function() {
+var chatty = (function(string) {
+
   var messages = [];
+  string.addMsg = function(userText) {
+    messages.push(userText);
 
-  return {
-    getMessagesArray: function() {
-      return messages;
-    }
-    addMsg: function(userText) {
-      messages.push(userText);
-      return messages;
-      var toDom = document.getElementById("messageCon");
-      // var toMessage = "";
-      // for (var i = 0; i < userText.length; i++) {
-      //   toMessage += `<div class="singleMessage">${userText[i]}</div>`;
+    var toDom = document.getElementById("messageCon");
 
-      toDom.innerHTML = messages;
-      }
-      return toDom;
-    }
-  };
-)(chatty || {});
+    toDom.innerHTML = messages;
+  }
+  string.getMessagesArray = function() {
+    return messages;
+  }
+   return string;
+})(chatty || {});
+
 
 
 
@@ -52,4 +47,4 @@ var chatty = (function() {
 // <button class="clear-messages">Clear messages</button>
 // // This will disable the first button with a class of "button-message"
 // document.getElementsByClassName("clear-messages")[0].setAttribute("disabled", true);
->>>>>>> master
+
