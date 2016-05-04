@@ -6,7 +6,7 @@
 var chatty = (function(chatty) {
   var message =  document.getElementByID('messageContainer').innerHTML;
   document.querySelector("body").addEventListener("click", function(event) {
-    if (event.target.class  === "deleteButton") {
+    if (event.target.ClassName  === "deleteButton") {
       //delete the corresponding message
       this.message.setAttribute("disabled", true);
 
