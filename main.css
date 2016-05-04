@@ -1,1 +1,28 @@
 
+/*Padding at top of body to prevent fixed nav from overlapping main content.*/
+body {
+	padding-top: 90px;
+}
+
+.navbar {
+	height: 80px;
+}
+
+.container {
+	margin-top: 10px;
+	height:
+}
+
+.logo {
+	float: left;
+}
+
+.checkboxes{
+	padding-left: 100px;
+
+}
+
+.checkboxes .checks {
+	padding: 0 10px 20px 10px;
+	margin: 5px;
+}
