@@ -11,7 +11,8 @@ var chatty = (function(string) {
 
     var toDom = document.getElementById("messageCon");
 
-    toDom.innerHTML = messages;
+    toDom.innerHTML += '<p>' + userText + '</p>';
+    console.log(messages);
   }
   string.getMessagesArray = function() {
     return messages;

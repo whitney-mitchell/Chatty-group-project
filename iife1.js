@@ -19,11 +19,12 @@ var chatty = (function(newchatty) {
 	    var messageObject = dataArray[index];
 	    for (key in messageObject) {
 	      var output = messageObject[key];
-	      messageData += "<div>";
-	      messageData += output;
-	      messageData += "</div>";
+				//messageData += "<div>";
+				//messageData += output;
+				//messageData += "</div>";
 
-	      messageList.innerHTML += messageData;
+        newchatty.addMsg(output);
+				//messageList.innerHTML += messageData;
 	    }
 	  }
 	}
