@@ -26,3 +26,12 @@ body {
 	padding: 0 10px 20px 10px;
 	margin: 5px;
 }
+
+/*Dark Theme mode*/
+.darkTheme {
+  background-color: #264a60;
+  color: #eeeaea;
+}
+
+.largeText {
+  font-size: 2em;
