@@ -29,9 +29,14 @@ body {
 
 /*Dark Theme mode*/
 .darkTheme {
-  background-color: #264a60;
+  background-color: #262626;
   color: #eeeaea;
 }
 
+.darkTheme header{
+  color: black;
+}
+
+/*large mode*/
 .largeText {
   font-size: 2em;

@@ -9,7 +9,7 @@ var chatty = (function(chatty) {
     if (event.target.ClassName  === "deleteButton") {
       //delete the corresponding message
       this.message.setAttribute("disabled", true);
-
+      //and call method in iife2 to delete from private array.
     }
   })
 }(chatty || {}));

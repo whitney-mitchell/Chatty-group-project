@@ -23,7 +23,7 @@ var chatty = (function() {
       return toDom;
     }
   };
-})(chatty || {});
+)(chatty || {});
 
 
 
