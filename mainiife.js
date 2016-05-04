@@ -1,16 +1,6 @@
-var chatty = (function () {
-	var messages = [];
-
-	return {
-		getMessagesArray: function() {
-			return messages;
-		}
-	};
- }());
-
-
-// Event listener for text input, keypress Enter.
+// Event listener for text input, keypress Enter. Also assigning variable by element ids.
 var msgResult = document.getElementById("messageInput");
+
 msgResult.addEventListener("keypress", function(event) {
 	if (event.keyCode === 13) {
 		chatty.addMsg(msgResult.value);
