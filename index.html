@@ -4,23 +4,29 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Chatty!</title>
-	<link rel="stylesheet" href="main.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 	<header id="header">
-		<nav>
-			<div class="logo">Chatty!</div>
-			<input type="text" class="messageIn">
-			<button type="button" class="clearAll">Clear All</button>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="logo">Chatty!</div>
+				<input type="text" class="messageIn" id="messageInput">
+				<button type="button" class="clearAll" id="clear">Clear All</button>
+			</div>
 		</nav>
 	</header>
 	<div class="checkboxes">
 		<input type="checkbox" class="checks" id="darkTheme">Dark Theme</input>
 		<input type="checkbox" class="checks" id="largeText">Large Text</input>
 	</div>
-	<div class="messageContainer">
+	<div class="messageContainer" id="messageCon">
 	</div>
 
-	<script src="main.js"></script>
+	<script src="mainiife.js"></script>
+	<script src="iife1.js"></script>
+	<script src="iife2.js"></script>
+	<script src="iife3.js"></script>
 </body>
 </html>
