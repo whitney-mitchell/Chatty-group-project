@@ -1,7 +1,6 @@
 
 //load JSON file and return the array of objects. . AHA! IT IS OBJECTS!
 var chatty = (function(newchatty) {
-
 	function executeThisCodeIfFileFails () {
 	  // console.log("an error occurred while loading this file");
 	}
@@ -13,6 +12,7 @@ var chatty = (function(newchatty) {
 	    // console.log("data", dataArray);
 
 	  var messageList = document.getElementById("messageCon");
+
 
 	  for(index in dataArray) {
 	    var messageData = "";
@@ -35,7 +35,9 @@ var chatty = (function(newchatty) {
 
 	myRequest.open("get", "main.json");
 
+
 	myRequest.send();
 	return newchatty;
 })(chatty || {});
+
 

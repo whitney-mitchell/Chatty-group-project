@@ -11,6 +11,7 @@ var chatty = (function(string) {
 
     var toDom = document.getElementById("messageCon");
 
+
     toDom.innerHTML = messages;
   }
   string.getMessagesArray = function() {
@@ -18,7 +19,6 @@ var chatty = (function(string) {
   }
    return string;
 })(chatty || {});
-
 
 
 
@@ -47,4 +47,4 @@ var chatty = (function(string) {
 // <button class="clear-messages">Clear messages</button>
 // // This will disable the first button with a class of "button-message"
 // document.getElementsByClassName("clear-messages")[0].setAttribute("disabled", true);
->>>>>>> master
+
