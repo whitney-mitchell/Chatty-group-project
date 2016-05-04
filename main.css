@@ -10,16 +10,18 @@ body {
 
 .container {
 	margin-top: 10px;
-	height:
+
 }
 
 .logo {
-	float: left;
+	/*float: left;*/
+  display: inline-block;
+  text-align: left;
 }
 
 .checkboxes{
-	padding-left: 100px;
-
+	padding-left: 114px;
+  padding-top: 10px;
 }
 
 .checkboxes .checks {
@@ -40,3 +42,12 @@ body {
 /*large mode*/
 .largeText {
   font-size: 2em;
+}
+
+  /*  Message Container */
+
+.messageContainer {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
