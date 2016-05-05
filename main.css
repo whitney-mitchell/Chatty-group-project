@@ -1,38 +1,49 @@
 
 /*Padding at top of body to prevent fixed nav from overlapping main content.*/
 body {
-	padding-top: 90px;
+	padding-top: 110px;
 }
 
 .navbar {
-	height: 80px;
+	height: 100px;
+  margin-bottom: 0;
+  background-color: #3f93de;
 }
 
 .container {
 	margin-top: 10px;
-
 }
 
 .logo {
 	/*float: left;*/
   display: inline-block;
   text-align: left;
+  font-family: Changa One;
+  font-size: 45px;
+  padding-right: 10px;
+}
+
+.messageIn {
+  width: 30%;
 }
 
 .checkboxes{
-	padding-left: 114px;
-  padding-top: 10px;
+	padding-left: 120px;
+  padding-bottom: 10px;
 }
 
 .checkboxes .checks {
-	padding: 0 10px 20px 10px;
-	margin: 5px;
+	padding: 0 10px 30px 10px;
+	margin: 5px 10px 5px ;
 }
 .deleteButton {
   margin-left: 10px;
+  margin-right: 100px;
+  /*display: inline-block;*/
+  float: right;
 }
 
-/*Dark Theme mode*/
+  /*Dark Theme mode*/
 .darkTheme {
   background-color: #262626;
   color: #eeeaea;
@@ -42,10 +53,11 @@ body {
   color: black;
 }
 .darkTheme .deleteButton {
-  background-color: initial;
-  color: #eeeaea;
+  background-color: #3f93de;
+  color: #262626;
 }
-/*large mode*/
+
+  /*large mode*/
 .largeText {
   font-size: 2em;
 }

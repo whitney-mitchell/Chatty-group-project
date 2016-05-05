@@ -1,8 +1,3 @@
-//one function to accept element ID and the user message and then add the message and delete button to the "specified parent element"
-//store message in a private array in THIS IIFE.
-//expose a function to read ALL messages and delete THE SELECTED message.
-//below is example of setting query to body for adding elements.
-//
 var chatty = (function(string) {
 //create private array
   var messages = [];

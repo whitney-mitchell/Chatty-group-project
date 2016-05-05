@@ -14,7 +14,7 @@ function big(){
   document.querySelector("body").classList.toggle("largeText");
 }
 
-//Event listener for text input. Adds message to messages array.
+//Event listener for text input. Sends text to addMsg function.
 var msgResult = document.getElementById("messageInput");
 msgResult.addEventListener("keypress", function(event) {
 	if (event.keyCode === 13) {
@@ -26,11 +26,11 @@ msgResult.addEventListener("keypress", function(event) {
 
 // Event listener for delete buttons. Removes button with its parent node.
 document.querySelector("body").addEventListener("click", function(event) {
-	// console.log(event);
 	if (event.target.className === "deleteButton") {
 	  chatty.remove(event);
 	}
 });
+
 
 //Event listener for clear all button. Removes all messages from message container
 var clearMessage = document.getElementById("clear");
@@ -39,12 +39,11 @@ clearMessage.addEventListener("click", function(event) {
   var mess = document.getElementById("messageCon");
   mess.innerHTML = "";
     clearMessage.setAttribute("disabled", true);
-
 });
 
- msgResult.addEventListener("keyup", function() {
+msgResult.addEventListener("keyup", function() {
         clearMessage.removeAttribute("disabled");
-    })
+})
 
 
 
