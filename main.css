@@ -7,6 +7,7 @@ body {
 .navbar {
 	height: 100px;
   margin-bottom: 0;
+  background-color: #3f93de;
 }
 
 .container {
@@ -37,6 +38,9 @@ body {
 }
 .deleteButton {
   margin-left: 10px;
+  margin-right: 100px;
+  /*display: inline-block;*/
+  float: right;
 }
 
   /*Dark Theme mode*/
@@ -49,8 +53,8 @@ body {
   color: black;
 }
 .darkTheme .deleteButton {
-  background-color: initial;
-  color: #eeeaea;
+  background-color: #3f93de;
+  color: #262626;
 }
 
   /*large mode*/

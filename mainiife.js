@@ -1,4 +1,4 @@
-// Event listener for text input, keypress Enter. Also assigning variable by element ids.
+//Main IIFE
 var chatty = (function() {
 
 })(chatty || {});
