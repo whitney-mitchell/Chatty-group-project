@@ -32,4 +32,7 @@ document.querySelector("body").addEventListener("click", function(event) {
 	}
 });
 
-// event.target.parentNode.remove(event.parentNode);
+
+
+
+
