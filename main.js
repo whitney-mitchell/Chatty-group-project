@@ -14,6 +14,7 @@ function big(){
   document.querySelector("body").classList.toggle("largeText");
 }
 
+//Event listener for text input. Adds message to messages array.
 var msgResult = document.getElementById("messageInput");
 msgResult.addEventListener("keypress", function(event) {
 	if (event.keyCode === 13) {
@@ -22,3 +23,14 @@ msgResult.addEventListener("keypress", function(event) {
 		msgResult.value = "";
 	}
 });
+
+
+// Event listener for delete buttons. Removes button with its parent node.
+document.querySelector("body").addEventListener("click", function(event) {
+	console.log(event);
+	if (event.target.className === "deleteButton") {
+		removeButton();
+	}
+});
+
+// event.target.parentNode.remove(event.parentNode);
