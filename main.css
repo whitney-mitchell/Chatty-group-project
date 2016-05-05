@@ -28,6 +28,9 @@ body {
 	padding: 0 10px 20px 10px;
 	margin: 5px;
 }
+.deleteButton {
+  margin-left: 10px;
+}
 
 /*Dark Theme mode*/
 .darkTheme {
@@ -38,7 +41,10 @@ body {
 .darkTheme header{
   color: black;
 }
-
+.darkTheme .deleteButton {
+  background-color: initial;
+  color: #eeeaea;
+}
 /*large mode*/
 .largeText {
   font-size: 2em;
