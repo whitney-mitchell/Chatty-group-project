@@ -22,3 +22,11 @@ msgResult.addEventListener("keypress", function(event) {
 		msgResult.value = "";
 	}
 });
+
+var clearResult = document.getElementById("clear");
+clearResult.addEventListener("click", function(event) {
+  if (event ) {
+    // console.log(event);
+    clearResult.value = "";
+  }
+});
