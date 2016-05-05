@@ -26,13 +26,25 @@ msgResult.addEventListener("keypress", function(event) {
 
 // Event listener for delete buttons. Removes button with its parent node.
 document.querySelector("body").addEventListener("click", function(event) {
-	console.log(event);
+	// console.log(event);
 	if (event.target.className === "deleteButton") {
 	  chatty.remove(event);
 	}
 });
 
+//Event listener for clear all button. Removes all messages from message container
+var clearMessage = document.getElementById("clear");
+clearMessage.addEventListener("click", function(event) {
+    console.log("click");
+  var mess = document.getElementById("messageCon");
+  mess.innerHTML = "";
+    clearMessage.setAttribute("disabled", true);
 
+});
+
+ msgResult.addEventListener("keyup", function() {
+        clearMessage.removeAttribute("disabled");
+    })
 
 
 

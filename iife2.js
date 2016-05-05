@@ -11,6 +11,8 @@ var chatty = (function(string) {
 
     var toDom = document.getElementById("messageCon");
 
+    // if string !== "";
+    //   clearMessage.setAttribute("disabled", false);
 
     toDom.innerHTML += '<p>' + userText + '<button class="deleteButton">Delete</button>' + '</p>';
     console.log(messages);
