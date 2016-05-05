@@ -14,7 +14,7 @@ function big(){
   document.querySelector("body").classList.toggle("largeText");
 }
 
-//Event listener for text input. Adds message to messages array.
+//Event listener for text input. Sends text to addMsg function.
 var msgResult = document.getElementById("messageInput");
 msgResult.addEventListener("keypress", function(event) {
 	if (event.keyCode === 13) {
@@ -33,4 +33,4 @@ document.querySelector("body").addEventListener("click", function(event) {
 	}
 });
 
-// event.target.parentNode.remove(event.parentNode);
+
