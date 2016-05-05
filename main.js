@@ -29,7 +29,7 @@ msgResult.addEventListener("keypress", function(event) {
 document.querySelector("body").addEventListener("click", function(event) {
 	console.log(event);
 	if (event.target.className === "deleteButton") {
-		removeButton();
+	  chatty.remove(event);
 	}
 });
 
